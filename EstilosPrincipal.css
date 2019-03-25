@@ -1,0 +1,221 @@
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #F2F3F4;
+	background-image: url("Back3.jpg")
+}
+
+/*Comienza nav (banner)*/
+
+#banner{
+	margin-left: 10%;
+	background-color: #F2F3F4;
+	box-shadow: 0px 2px 10px #999;
+	width: 80%;
+	position: fixed;
+}
+
+#banner img{
+	float: left;
+	margin-left: 10%;
+}
+
+
+#banner ul{
+	margin-top: 0px;
+	margin-left: 22%;
+	list-style: none;
+}
+
+#banner li{
+	background-color: #F2F3F4;
+}
+
+#banner li a{
+	/*background-color: #000;*/
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px 0px; /*10 15*/
+	width: 150px;
+	text-align: center;
+	display: block;
+}
+
+#banner li:hover{
+	background-color: #F1C40F;
+}
+
+#banner ul > li{
+	margin-left: 0%;
+	float: left;
+}
+
+#banner li ul{
+	display: none;
+	position: absolute;
+	min-width: 10px;
+}
+
+#banner li:hover > ul{
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	color: white;
+}
+
+#banner ul li img{
+	padding-top: 0%;
+	float: left;
+	margin-top: 0%;
+}
+
+/*Finaliza nav (banner)*/
+
+
+
+
+/*Comienza section (primero)*/
+
+	/*Comienza nav (na1) section->nav*/
+
+#na1{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 30px;
+	background-color: #10171E;
+	width: 25%;
+	height: 657px;
+	float: left;
+}
+
+#na1 ul{
+	padding-top: 25%;
+}
+
+#na1 li{
+	padding-left: 5%;
+	list-style-image: none;
+}
+
+#na1 ul li a{
+	text-decoration: none;
+	color: white;
+	padding-top: 25%;
+	height: 100px;
+	display: block;
+}
+
+#na1 ul li img{
+	padding-top: 0%;
+	float: left;
+	margin-top: -3%;
+}
+
+#na1 li:hover{
+	background-color: #17202A;
+}
+
+#inicio a img{
+	position: absolute;
+	margin-left: 12%;
+	margin-top: 35%;
+}
+
+	/*Comienza nav (na1)*/
+
+/*Termina section (primero)*/
+
+
+
+
+/*Comienza header*/
+
+header{
+	height: 43px;
+	clear: both;
+	background-color: #0A3753;
+	color: white;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+/*Termina header*/
+
+
+/*Comienza section (segundo)*/
+
+#segundo{
+	background-image: url("Back.jpg");
+	height: 614px;
+	background-color: #1C2833;
+}
+
+#segundo p{
+	color: white;
+	margin-top: 2%;
+	width: 55%;
+	text-align: justify;
+	margin-left: 5%;
+	font-family:  Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 15.5px;
+	float: left;
+}
+
+#segundo aside{
+	background-color: #1C2833;
+	width: 32%;
+	margin-left: 65%;
+	box-shadow: 0px 2px 10px #1C2800;
+}
+
+#segundo h1{
+	background-color: #1C2833;
+	margin: 10px;
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+/*Termina section (segundo)*/
+
+
+
+
+
+/*Comienza section (Tercero)*/
+
+#tercero #one{
+	background-image: url("Back2.jpg");
+	font-family:  Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+
+#tercero #one p{
+	text-align: justify;
+	margin-left: 10%;
+	padding-bottom: 2%;
+	width: 80%;
+}
+
+#tercero #two{
+	background-image: url("Back3.jpg");
+	font-family:  Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 30px;
+	width: 100%;
+	color: white;
+}
+
+#tercero #two p{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+footer{
+	background-image: url("Back3.jpg");
+}
