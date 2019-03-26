@@ -7,7 +7,7 @@
 
 body{
 	background-color: #F2F3F4;
-	background-image: url("Back3.jpg")
+	background-image: url("Images/Back3.jpg")
 }
 
 /*Comienza nav (banner)*/
@@ -150,7 +150,7 @@ header{
 /*Comienza section (segundo)*/
 
 #segundo{
-	background-image: url("Back.jpg");
+	background-image: url("Images/Back.jpg");
 	height: 614px;
 	background-color: #1C2833;
 }
@@ -189,7 +189,7 @@ header{
 /*Comienza section (Tercero)*/
 
 #tercero #one{
-	background-image: url("Back2.jpg");
+	background-image: url("Images/Back2.jpg");
 	font-family:  Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 30px;
 	text-align: center;
@@ -204,7 +204,7 @@ header{
 }
 
 #tercero #two{
-	background-image: url("Back3.jpg");
+	background-image: url("Images/Back3.jpg");
 	font-family:  Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 30px;
 	width: 100%;
@@ -217,5 +217,5 @@ header{
 }
 
 footer{
-	background-image: url("Back3.jpg");
+	background-image: url("Images/Back3.jpg");
 }
