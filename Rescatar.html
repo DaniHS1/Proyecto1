@@ -5,6 +5,9 @@
 	<title>Amikos perrunos | DatosCuriosos</title>
 	<link rel="stylesheet" type="text/css" href="EstilosConsejos.css">
 
+	<scriptsrc="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	</script>
 </head>
 
 <body>
@@ -33,7 +36,7 @@
 			<h3>Necesitamos tus datos para poder contactarte</h3>
 			<form action="" method="get">
 				<p>
-					Nombre:_______________<input type="text" name="name_control" autofocus required />
+					Nombre:_______________<input type="text" placeholder="nombre" id="nombretxt" autofocus required />
 				</p>
 				<p>
 					Correo electronico:___<input type="email" name="email_control" required />
@@ -45,12 +48,10 @@
 					Teléfono:______________.<input type="tel" name="tel_control"/>
 				</p>
 				<p>
-					<input type="submit" value="Enviar"/>
+					<input type="submit" value="Enviar" id="boton-guardar" onclick="var nom = get.getElementById("nombretxt").value; sessionStorage.setItem("Nombre", nom);"/>
 				</p>
 			</form>
 		</section>
-
-
 
 		<center>
 				<span style="font-size: large;"><span class="Apple-style-span" style="color: red;"><script language="JavaScript" type="text/javascript">
