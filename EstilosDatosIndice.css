@@ -1,0 +1,158 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #F2F3F4;
+	background-image: url("Back3.jpg")
+}
+
+/*Comienza nav (banner)*/
+
+#banner{
+	margin-left: 10%;
+	background-color: #F2F3F4;
+	box-shadow: 0px 2px 10px #999;
+	width: 80%;
+	position: fixed;
+}
+
+#banner img{
+	float: left;
+	margin-left: 10%;
+}
+
+
+#banner ul{
+	margin-top: 0px;
+	margin-left: 22%;
+	list-style: none;
+}
+
+#banner li{
+	background-color: #F2F3F4;
+}
+
+#banner li a{
+	/*background-color: #000;*/
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px 0px; /*10 15*/
+	width: 150px;
+	text-align: center;
+	display: block;
+}
+
+#banner li:hover{
+	background-color: #F1C40F;
+}
+
+#banner ul > li{
+	margin-left: 0%;
+	float: left;
+}
+
+#banner li ul{
+	display: none;
+	position: absolute;
+	min-width: 10px;
+}
+
+#banner li:hover > ul{
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	color: white;
+}
+
+#banner ul li img{
+	padding-top: 0%;
+	float: left;
+	margin-top: 0%;
+}
+
+/*Termina nav (banner)*/
+
+
+
+section{
+	padding-top: 100px;
+	text-align: center;
+}
+
+section h1{
+
+	padding-bottom: 50px;
+}
+
+
+
+/*inicia cuadritos*/
+
+aside{
+	margin-left: 350px;
+}
+
+div.contenedor{
+	width: 225px;
+	background: black;
+	height: 280px;
+	float: left;
+	transition: height .4s;
+}
+
+div#uno{
+	background: blue;
+}
+div#dos{
+	background: green;
+}
+div#tres{
+	background: purple;
+}
+div#cuatro{
+	background: #12ADED;
+}
+div#cinco{
+	background: gray;
+}
+div#seis{
+	background: #DB19F2;
+}
+div#siete{
+	background: orange;
+}
+img.icon{
+	display: block;
+	margin: 50px auto;
+	width: 100px;
+	padding: 20px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 30px rgba(250, 255, 255, 1);
+	background: rgba(255, 255, 255, .20);
+	transition: box-shadow .4s;
+}
+
+p.texto{
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	opacity: .6;
+	transition: padding-top .4;
+}
+
+div.contenedor:hover{
+	height: 300px;
+}
+
+div.contenedor:hover p.texto{
+	padding-top: 30px;
+	opacity: 1;
+}
+
+div.contenedor:hover img.icon{
+	box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .6);
+}
