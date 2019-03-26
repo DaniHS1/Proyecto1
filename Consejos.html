@@ -29,14 +29,76 @@
 
 	<div id="contenido">
 		<section>
-			<h1>Consejos</h1>
+			<span class="luz" id="blink"><center><h1><marquee scrollamount="10" width="80%">Consejos</marquee></h1></center></span>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-         nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-         deserunt mollit anim id est laborum.</p>
+		<script>
+		(function() {
+
+		setInterval(function(){
+		  var el = document.getElementById('blink');
+		  if(el.className == 'luz'){
+		      el.className = 'luz on';
+		  }else{
+		      el.className = 'luz';
+		  }
+		},500);
+
+		})();
+		</script>
+
+		<style>
+		.luz.on{
+		  color: #F7DC6F;/*color del texto al cambiar*/
+		  text-shadow:
+		     1px  1px rgba(255, 255, 255, .1),
+		    -1px -1px rgba(0, 0, 0, .88),
+		     0px  0px 20px #F7DC6F;/*color de la luz del texto*/
+		}
+		.luz{
+		  font-size:80px;/*tamaño de la fuente*/
+		  color: #000000;
+		  text-shadow:
+		     1px  1px rgba(255, 255, 255, .1),
+		    -1px -1px rgba(0, 0, 0, .88);
+		}
+		</style>
+			<center><img src="Images/Perro1.jpg" alt="NOIMG" width="80%"></center>
+
+      <p>¿Cómo mantener saludable, contento y tranquilo a tu perro o gato? Estos
+				 son algunos consejos de veterinarios, entrenadores, paseadores y especialistas.
+<br><br>
+				 Esta es la época del año en para comenzar mejores hábitos, para eliminar los desagradables. Pero también es la época en la que llegan nuevas mascotas a casa. Estos son los consejos que recomiendan entrenadores, especialistas y veterinarios para mantener contentos y saludables tanto a los dueños como a las mascotas.
+<br><br>
+					<strong>1. Mantener un peso saludable</strong>
+<br><br>
+					Este consejo aplica tanto para mascotas como para los dueños. Uno lleva una vida más ligera cuando no tiene que preocuparse por cargar kilos extra. Tú controlas lo que les estás dando de comer, asegúrate que no les estés dando aserrín. También controla sus porciones y asegúrate que están caminando o corriendo lo suficiente para quemar las calorías. Si hace falta, cómprale también un juguete que lo mantenga activo aún dentro de casa.
+<br><br>
+					<strong>2. Invierte en su entrenamiento</strong>
+<br><br>
+					Las clases para las mascotas benefician al dueño antes que a nadie, pues le otorgan el control tanto para situaciones básicas, como soltar algo que tenga en la boca que no deba masticar, o quedarse tranquilo, o incluso en ocasiones que se presenten.
+<br><br>
+					También es bueno para la socialización de las mascotas, con otras personas, con niños o con otros animales. Mira este enternecedor ejemplo, donde un perro ayuda a un cachorro a bajar las escaleras:
+<br><br>
+					<strong>3. Tómate un tiempo para revisar sus dientes</strong>
+<br><br>
+					Un cuidado dental adecuado puede reducir el “aliento de perro”. Puedes ayudarte de cepillos viejos, cepillos de dedo, cepillos para la lengua, aditivos para el agua, gomas de mascar… y por supuesto visitas al veterinario para revisiones y limpiezas periódicas.
+<br><br>
+					<strong>4. Agenda visitas al médico</strong>
+<br><br>
+					Una revisión periódica no le hace daño a nadie.
+<br><br>
+					<strong>5. Mantenlos hidratados</strong>
+<br><br>
+					Las infecciones en las vías urinarias son una de las enfermedades más comunes y son prevenibles. Sólo asegúrate que tus mascotas siempre tienen agua limpia y fresca a su alcance. Cámbiales el agua y lava sus platos regularmente.
+<br><br>
+					<strong>6. Protégelos de las pulgas</strong>
+<br><br>
+					En verano o en invierno, hay que mantenerlos protegidos de las pulgas. Incluso en los meses más fríos hay que rociarlos con un polvo antipulgas.
+<br><br>
+					<strong>7. Estimulación mental</strong>
+<br><br>
+					“Un perro cansado es un perro feliz”. Por otro lado, una mascota aburrida te costará cientos de zapatos, fundas, cajas y objetos mordisqueados. Invierte en juguetes interactivos que los mantendrán ocupados incluso cuando tengas que salir de casa.
+			 </p>
 
 		</section>
 
