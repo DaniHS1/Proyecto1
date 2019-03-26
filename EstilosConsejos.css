@@ -10,6 +10,10 @@ body{
 
 /*Comienza nav (banner)*/
 
+#err{
+	height: 20px;
+}
+
 #banner{
 	margin-left: 10%;
 	background-color: #F2F3F4;
