@@ -4,7 +4,27 @@
 	<meta charset="utf-8">
 	<title>Amikos perrunos | DatosCuriosos</title>
 	<link rel="stylesheet" type="text/css" href="EstilosConsejos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
 
+	$(document).ready(function(){
+					/*Obtener datos almacenados*/
+					var nombre = localStorage.getItem("Nombre");
+					var correo = localStorage.getItem("Correo");
+					var fecha = localStorage.getItem("FechNa");
+					var telefono = localStorage.getItem("Telefono");
+					/*Mostrar datos almacenados*/
+					document.getElementById("nombre").innerHTML = nombre + " GRACIAS!";
+					document.getElementById("DatosL").innerHTML = "Datos: " + "Correo: "
+					+ correo + " fecha de naciemiento: " + fecha + " Telefono: " + telefono;
+
+					$('#botInic').click(function(){
+							/*Captura de datos escrito en los inputs */
+							localStorage.clear();
+					});
+
+	});
+	</script>
 </head>
 
 <body>
@@ -12,18 +32,7 @@
 	<nav id="banner"  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 		<img src="Images/Logo.png" alt="No encontrado" width="6%">
 		<ul>
-			<li><a href="Principal.html"><img src="Images/Casa.png" alt="Noimg"><strong>Inicio</strong></a></li>
-			<li><a href="DatosIndice.html"><img src="Images/Datos.png" alt="Noimg"><strong>Datos</strong></a></li>
-			<li><a href="Consejos.html"><img src="Images/Consejos.png" alt="Noimg"><strong>Consejos</strong></a></li>
-			<li><a href=""><img src="Images/Mas.png" alt="Noimg"><strong>Mucho más</strong></a>
-				<ul>
-					<li><a href="DatosCuriosos.html">Datos curiosos</a></li>
-					<li><a href="ArticuloEspecial.html">Articulos Especiales</a></li>
-					<li><a href="Principal.html#linkQuien">Conocenos</a></li>
-					<li><a href="Rescatar.html">Rescatar</a></li>
-				</ul>
-			</li>
-		</ul>
+			<li><a href="Principal.html" id="botInic"><img src="Images/Casa.png" alt="Noimg"><strong>Inicio</strong></a></li>
 	</nav>
 
 
@@ -33,8 +42,12 @@
       <h2><center>Te regalamos un hueso ¡UN HUESO DE ORO!</center></h2>
 
       <center><img src="Iconos bien/icons8-hueso-del-perro-50.png" alt="NoIMG" width="10%"></center>
-      <p><center>Analizaremos esta informaciòn y la usaremos para contactarte</center></p>
+			<br>
+			<center>
+			<label type="text" id="nombre"></label><br>
+			<label type="text" id="DatosL"></label><br></center>
 
+      <p><center>Analizaremos esta informaciòn y la usaremos para contactarte</center></p>
 		</section>
 
 
