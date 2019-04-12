@@ -21,7 +21,7 @@
   			<li><a href=""><img src="Images/Mas.png" alt="Noimg"><strong>Mucho más</strong></a>
   				<ul>
   					<li><a href="DatosCuriosos.html">Datos curiosos</a></li>
-  					<li><a href="ArticuloEspecial.html">Articulos Especiales</a></li>
+  					<li><a href="ArticuloEspecial.html">Especiales</a></li>
   					<li><a href="Principal.html#linkQuien">Conocenos</a></li>
   					<li><a href="Rescatar.php">Rescatar</a></li>
   				</ul>
