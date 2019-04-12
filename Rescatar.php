@@ -26,8 +26,8 @@
 						document.getElementById("nombretxt").value = "";
 						document.getElementById("correotxt").value = "";
 
-	        document.location.target = "_blank";
-	        document.location.href="Agradecer.html";
+	        /*document.location.target = "_blank";
+	        document.location.href="Agradecer.html";*/
 				});
 		});
 
@@ -76,6 +76,17 @@
 					<input type="submit" value="Enviar" id="boton-guardar" />
 				</p>
 			</form>
+			<?php
+				if($_POST){//
+					$nom = $_POST['nomb'];
+					$cor = $_POST['emailll'];
+					$fech = $_POST['fech'];
+					$tel = $_POST['telef'];
+
+					mysql_query("inset into usuarios(nombre, correo, fecha_nacimiento, telefono)
+					 values('$nom', '$cor', '$fech', '$tel')")or die(mysql_error());
+				}
+			?>
 		</section>
 
 		<center>
@@ -112,15 +123,3 @@
 	</div>
 </body>
 </html>
-
-<?php
-	if($_POST){//
-		$nom = $_POST['nomb'];
-		$cor = $_POST['emailll'];
-		$fech = $_POST['fech'];
-		$tel = $_POST['telef'];
-
-		mysql_query("inset into usuarios(nombre, correo, fecha_nacimiento, telefono)
-		 values('$nom', '$cor', '$fech', '$tel')")or die(mysql_error());
-	}
-?>

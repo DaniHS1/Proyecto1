@@ -6,5 +6,5 @@
   $con=mysqli_connect($db_host,$db_login,$db_pswd,$db_name);
   if($con){
   }
-  else{ echo "Error en la conexion.";}
+  else{ echo " <h1>Error en la conexion.</h1>";}
 ?>
