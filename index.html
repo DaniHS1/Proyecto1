@@ -4,13 +4,15 @@
 	<meta charset="utf-8">
 	<title>Perros</title>
 	<link rel="stylesheet" type="text/css" href="EstilosPrincipal.css">
+	<link rel="stylesheet" href="Animaciones.js">
+
 	<script>
 
 	</script>
 </head>
 
-<body><!-- onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');"-->
-
+<body onLoad="document.querySelector('.main').classList.add('fadein');" onunload="document.querySelector('.main').classList.add('fadeout');"><!-- onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');"-->
+<div class="main">
 	<div class="n"> <a href="#" title="Ir arriba"><img alt="Ir arriba" border="0" src="ir-arriba-simbolo-de-interfaz-dibujado-a-mano-con-una-flecha-apuntando-hacia-arriba-a-un-rectangulo-delgado.png" width="8%" style="position:fixed;bottom:0;right:0;"/></a> </div>
 
 	<div class="social">
@@ -150,6 +152,6 @@
 		<footer><center><strong>Copyright 2019 © Salvar nuestros amikos</strong></center> </footer>
 
 	</div>
-
+</div>
 </body>
 </html>
