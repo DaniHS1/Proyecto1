@@ -1,3 +1,6 @@
+<?php
+	include("conexion.php"):
+?>
 <!doctype html>
 <html>
 <head>
@@ -56,21 +59,21 @@
 		<section>
 			<h1>Rescatar Peludos</h1>
 			<h3>Necesitamos tus datos para poder contactarte</h3>
-			<form action="" method="get">
+			<form action="" method="post">
 				<p>
-					Nombre:_______________<input type="text" placeholder="Nombre" id="nombretxt" autofocus required />
+					Nombre:_______________<input type="text" placeholder="Nombre" id="nombretxt" name="nomb" autofocus required />
 				</p>
 				<p>
-					Correo electronico:___<input type="email" placeholder="Correo" id="correotxt" required />
+					Correo electronico:___<input type="email" placeholder="Correo" id="correotxt" name="emailll" required />
 				</p>
 				<p>
-					Fecha de nacimiento:_<input type="date" id="fechatxt"/>
+					Fecha de nacimiento:_<input type="date" id="fechatxt" name="fech" required/>
 				</p>
 				<p>
-					Teléfono:______________.<input type="tel" placeholder="Telefono" id="telefonotxt"/>
+					Teléfono:______________.<input type="tel" placeholder="Telefono" id="telefonotxt" name="telef" required/>
 				</p>
 				<p>
-					<input type="submit" value="Enviar" id="boton-guardar"/>
+					<input type="submit" value="Enviar" id="boton-guardar" />
 				</p>
 			</form>
 		</section>
@@ -109,3 +112,15 @@
 	</div>
 </body>
 </html>
+
+<?php
+	if($_POST){//
+		$nom = $_POST['nomb'];
+		$cor = $_POST['emailll'];
+		$fech = $_POST['fech'];
+		$tel = $_POST['telef'];
+
+		mysql_query("inset into usuarios(nombre, correo, fecha_nacimiento, telefono)
+		 values('$nom', '$cor', '$fech', '$tel')")or die(mysql_error());
+	}
+?>
