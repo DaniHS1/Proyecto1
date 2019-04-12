@@ -88,19 +88,22 @@
 					 //here
 					 $insert_value = 'INSERT INTO `' . $db_name . '`.`'.$db_table_name1.'` (`nombre` , `correo` , `fecha_nacimiento`, `telefono`)
 					 VALUES ("' . $nom . '", "' . $cor . '", "' . $fech . '", "' . $tel . '")';
- //here
+ 				 //here
             mysqli_select_db($con, $db_name);
             $retry_value = mysqli_query($con, $insert_value);
             if (!$retry_value) {
            		echo "error_registro";
            	}
             else
-            {
-
- 		            header ("Location: Agradecer.html");
-
+            {?>
+ 		            //header ("Location: Agradecer.html");
+								<script>
+									document.location.target = "_blank";
+									document.location.href="Agradecer.html";
+								</script>
+								<?php
              }
-				}
+					 }
 			?>
 		</section>
 
