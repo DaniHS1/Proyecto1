@@ -9,8 +9,16 @@
     <meta charset="utf-8">
     <title>Ver Datos</title>
     <link rel="stylesheet" type="text/css" href="EstilosConsejos.css">
+
+    <style media="screen">
+      #tr1 {
+        background-color: black;
+        color: white;
+      }
+    </style>
+
   </head>
-  <body>
+  <body><center>
 
     <nav id="banner"  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
   		<img src="Images/Logo.png" alt="No encontrado" width="6%">
@@ -28,31 +36,31 @@
   			</li>
   		</ul>
   	</nav>
-
-    <table>
-      <tr>
-        <td>id</td>
-        <td>Nombre</td>
-        <td>Email</td>
-        <td>Fecha de nacimiento</td>
-        <td>Telefono</td>
-      </tr>
-      <?php
-        $sql="SELECT * FROM usarios";
-        $resultado=mysqli_query($con, $sql);
-        while ($mostrar = mysqli_fetch_array($resultado)) {
-      ?>
-        <tr>
-          <td><?php echo $mostrar['idUsuarios'] ?></td>
-          <td><?php echo $mostrar['nombre'] ?></td>
-          <td><?php echo $mostrar['correo'] ?></td>
-          <td><?php echo $mostrar['fecha_nacimiento'] ?></td>
-          <td><?php echo $mostrar['telefono'] ?></td>
+    <section>
+      <table border="1">
+        <tr id="tr1">
+          <td>id</td>
+          <td>Nombre</td>
+          <td>Email</td>
+          <td>Fecha de nacimiento</td>
+          <td>Telefono</td>
         </tr>
-      <?php
-        }
-      ?>
-    </table>
-
+        <?php
+          $sql="SELECT * FROM `usuarios`";
+          $resultado=mysqli_query($con, $sql);
+          while ($mostrar = mysqli_fetch_array($resultado)) {
+        ?>
+          <tr>
+            <td><?php echo $mostrar['idUsuarios'] ?></td>
+            <td><?php echo $mostrar['nombre'] ?></td>
+            <td><?php echo $mostrar['correo'] ?></td>
+            <td><?php echo $mostrar['fecha_nacimiento'] ?></td>
+            <td><?php echo $mostrar['telefono'] ?></td>
+          </tr>
+        <?php
+          }
+        ?>
+      </table>
+    </center></section>
   </body>
 </html>
