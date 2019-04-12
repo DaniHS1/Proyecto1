@@ -1,9 +1,9 @@
 .fadein{
-  animation: fadein 1s forwards;
+  animation: fadein 2s forwards;
 }
 
 .fadeout{
-  animation: fadeout 1s forwards;
+  animation: fadeout 2s forwards;
 }
 
 @keyframes fadein {

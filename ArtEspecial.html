@@ -24,7 +24,15 @@
             document.location.href="index.html";
           });
       });
+
     </script>
+
+    <style media="screen">
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
 
   </head>
   <body onLoad="document.querySelector('.main').classList.add('fadein');" onunload="document.querySelector('.main').classList.add('fadeout');">
@@ -38,9 +46,10 @@
                 <p>La imperfección perfecta: la belleza de los
                    perros que viven con algún problema físico</p>
                 <div class="form-inline justify-content-center">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="boton-Inicio">Inicio</button>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ayudar</button>
+
+                    <button type="button" class="btn btn-primary btn-lg"><a href="index.html">Inicio</a></button>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <button type="button" class="btn btn-secondary btn-lg"><a href="Rescatar.php">Ayudar</a></button>
                 </div>
               </div>
             </div>
@@ -91,7 +100,44 @@
 
       </div>
 
-      <p>sadsa</p>
+      <!--Cardsss-->
+
+      <div class="card-deck">
+        <div class="card">
+          <img src="Images/Perro3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Alex Cearns, nos cautivó hace unos meses con una
+               serie dedicada a los perros más zen, fotos que transmiten paz y generan
+               buen humor. Ahora la fotógrafa australiana, responsable de Houndstooth
+               Studio, acaba de compartir con nosotros su nuevo proyecto: retratos
+               delicados y bellos, imágenes que captan la belleza de animales
+               presuntamente 'imperfectos' para mostrar, justamente, su absoluta y
+               natural perfección.</p>
+            <p class="card-text"><small class="text-muted">La</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Images/Perro2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Mientras que muchos humanos se obsesionan con la
+              perfección física, los animales viven y disfrutan. Ellos son, sencillamente,
+               y no dejan que esa presunta diferencia les pare.</p>
+            <p class="card-text"><small class="text-muted">Imperfección</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Images/Perro1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lo hemos visto en incontables ocasiones, es algo que
+               te deja con la boca abierta y que transmite una energía impresionante.</p>
+            <p class="card-text"><small class="text-muted">Perfecta</small></p>
+          </div>
+        </div>
+      </div>
+
   </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

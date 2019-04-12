@@ -5,10 +5,13 @@
 	<title>Amikos perrunos | Consejos</title>
 	<link rel="stylesheet" type="text/css" href="EstilosConsejos.css">
 
+	<link rel="stylesheet" href="Animaciones.css">
+
+	<link rel="stylesheet" href="Animaciones.js">
 </head>
 
-<body>
-
+<body onLoad="document.querySelector('.main').classList.add('fadein');">
+<div class="main">
 	<nav id="banner"  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 		<img src="Images/Logo.png" alt="No encontrado" width="6%">
 		<ul>
@@ -135,5 +138,6 @@
 				</script></span></span></center>
 		<footer><center><strong>Copyright 2019 © Salvar nuestros amikos</strong></center> </footer>
 	</div>
+</div>
 </body>
 </html>

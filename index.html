@@ -5,13 +5,14 @@
 	<title>Perros</title>
 	<link rel="stylesheet" type="text/css" href="EstilosPrincipal.css">
 	<link rel="stylesheet" href="Animaciones.js">
+	<link rel="stylesheet" href="Animaciones.css">
 
 	<script>
 
 	</script>
 </head>
 
-<body onLoad="document.querySelector('.main').classList.add('fadein');" onunload="document.querySelector('.main').classList.add('fadeout');"><!-- onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');"-->
+<body onLoad="document.querySelector('.main').classList.add('fadein'); " onunload="document.querySelector('.main').classList.add('fadeout');"><!-- onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');"-->
 <div class="main">
 	<div class="n"> <a href="#" title="Ir arriba"><img alt="Ir arriba" border="0" src="ir-arriba-simbolo-de-interfaz-dibujado-a-mano-con-una-flecha-apuntando-hacia-arriba-a-un-rectangulo-delgado.png" width="8%" style="position:fixed;bottom:0;right:0;"/></a> </div>
 
@@ -26,7 +27,7 @@
 	<nav id="banner"  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 		<img src="Images/Logo.png" alt="No encontrado" width="6%">
 		<ul>
-			<li><a href="Principal.html"><img src="Images/Casa.png" alt="Noimg"><strong>Inicio</strong></a></li>
+			<li><a href="index.html" onclick="document.querySelector('.main').classList.add('fadeout');"><img src="Images/Casa.png" alt="Noimg"><strong>Inicio</strong></a></li>
 			<li><a href="DatosIndice.html"><img src="Images/Datos.png" alt="Noimg"><strong>Datos</strong></a></li>
 			<li><a href="Consejos.html"><img src="Images/Consejos.png" alt="Noimg"><strong>Consejos</strong></a></li>
 			<li><a href=""><img src="Images/Mas.png" alt="Noimg"><strong>Mucho más</strong></a>
@@ -119,6 +120,8 @@
 			</article>
 
 		</section>
+
+			</div>
 		<center>
 				<span style="font-size: large;"><span class="Apple-style-span" style="color: red;"><script language="JavaScript" type="text/javascript">
 				//<![CDATA[
@@ -151,7 +154,6 @@
 				</script></span></span></center>
 		<footer><center><strong>Copyright 2019 © Salvar nuestros amikos</strong></center> </footer>
 
-	</div>
 </div>
 </body>
 </html>
