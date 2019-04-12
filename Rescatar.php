@@ -23,8 +23,8 @@
 						localStorage.setItem("FechNa", fech);
 						localStorage.setItem("Telefono", tel);
 						/*Limpiando los campos o inputs*/
-						document.getElementById("nombretxt").value = "";
-						document.getElementById("correotxt").value = "";
+						var targ= "_blank";
+						var linkkkk="Agradecer.html"
 
 	        /*document.location.target = "_blank";
 	        document.location.href="Agradecer.html";*/
@@ -48,7 +48,7 @@
 					<li><a href="DatosCuriosos.html">Datos curiosos</a></li>
 					<li><a href="ArticuloEspecial.html">Articulos Especiales</a></li>
 					<li><a href="Principal.html#linkQuien">Conocenos</a></li>
-					<li><a href="Rescatar.html">Rescatar</a></li>
+					<li><a href="Rescatar.php">Rescatar</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -83,8 +83,23 @@
 					$fech = $_POST['fech'];
 					$tel = $_POST['telef'];
 
-					mysql_query("inset into usuarios(nombre, correo, fecha_nacimiento, telefono)
-					 values('$nom', '$cor', '$fech', '$tel')")or die(mysql_error());
+					/*mysql_query("inset into usuarios(nombre, correo, fecha_nacimiento, telefono)
+					 values('$nom', '$cor', '$fech', '$tel')")or die(mysql_error());*/
+					 //here
+					 $insert_value = 'INSERT INTO `' . $db_name . '`.`'.$db_table_name1.'` (`nombre` , `correo` , `fecha_nacimiento`, `telefono`)
+					 VALUES ("' . $nom . '", "' . $cor . '", "' . $fech . '", "' . $tel . '")';
+ //here
+            mysqli_select_db($con, $db_name);
+            $retry_value = mysqli_query($con, $insert_value);
+            if (!$retry_value) {
+           		echo "error_registro";
+           	}
+            else
+            {
+
+ 		            header ("Location: Agradecer.html");
+
+             }
 				}
 			?>
 		</section>
